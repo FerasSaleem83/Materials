@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة ادارة نظم قواعد اليبانات
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة ادارة نظم قواعد اليبانات/مادة ادارة نظم قواعد البيانات.pptx')">
+            ادارة نظم قواعد اليبانات
+        </button>
+        <button onclick="downloadFile('مادة ادارة نظم قواعد اليبانات/RAID1 ادارة نظم قواعد البيانات.pdf')">
+            RAID
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة ادارة نظم قواعد البيانات/اسئلة ادارة نظم قواعد البيانات (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة ادارة نظم قواعد البيانات/اسئلة ادارة نظم قواعد البيانات (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة ادارة نظم قواعد البيانات/اسئلة ادارة نظم قواعد البيانات (3).pdf')">
+            3 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة ادارة نظم قواعد البيانات/اسئلة ادارة نظم قواعد البيانات (4).pdf')">
+            4 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة ادارة نظم قواعد البيانات/اسئلة ادارة نظم قواعد البيانات (5).pdf')">
+            5 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة ادارة نظم قواعد البيانات/اسئلة ادارة نظم قواعد البيانات دون تكرار.pdf')">
+            اسئلة سنوات دون تكرار
+        </button>
+        <button onclick="downloadFile('اسئلة ادارة نظم قواعد البيانات/اسئلة ادارة نظم قواعد البيانات كفاءة.pdf')">
+            اسئلة سنوات كفاءة
+        </button>
+    </div>
+    <h2>
+        تلخيص
+    </h2>
+    <div>
+        <button onclick="downloadFile('تلخيص ادارة نظم قواعد البيانات/تلخيص ادارة نظم قواعد البيانات.pdf')">
+            تلخيص
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجبات ادارة نظم قواعد البيانات/واجب ادارة نظم قواعد البيانات (1).docx')">
+            1 واجب
+        </button>
+        <button onclick="downloadFile('واجبات ادارة نظم قواعد البيانات/واجب ادارة نظم قواعد البيانات (2).docx')">
+            2 واجب
+        </button>
+        <button onclick="downloadFile('واجبات ادارة نظم قواعد البيانات/واجب ادارة نظم قواعد البيانات (3).docx')">
+            3 واجب
+        </button>
+        <button onclick="downloadFile('واجبات ادارة نظم قواعد البيانات/واجب ادارة نظم قواعد البيانات (4).docx')">
+            4 واجب
+        </button>
+    </div>
+    <h2>
+        تصوير اللوح
+    </h2>
+    <div>
+        <button
+            onclick="downloadFile('تصوير اللوح ادارة نظم قواعد البيانات/تصوير اللوح ادارة نظم قواعد البيانات (1).pdf')">
+            1 تصوير
+        </button>
+        <button
+            onclick="downloadFile('تصوير اللوح ادارة نظم قواعد البيانات/تصوير اللوح ادارة نظم قواعد البيانات (2).pdf')">
+            2 تصوير
+        </button>
+    </div>
+    <h2>
+        اللابات
+    </h2>
+    <div>
+        <button onclick="downloadFile('لابات ادارة نظم قواعد البيانات/لاب ادارة نظم قواعد البيانات (1).pptx')">
+            لاب 1
+        </button>
+        <button onclick="downloadFile('لابات ادارة نظم قواعد البيانات/لاب ادارة نظم قواعد البيانات (2).docx')">
+            لاب 2
+        </button>
+        <button onclick="downloadFile('لابات ادارة نظم قواعد البيانات/لاب ادارة نظم قواعد البيانات (3).docx')">
+            لاب 3
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/ادارة نظم قواعد البيانات.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

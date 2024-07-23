@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة برمجة مرئية
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة برمجة مرئية/مادة برمجة مرئية.pdf')">
+            برمجة مرئية
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة برمجة مرئية/اسئلة برمجة مرئية (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة برمجة مرئية/اسئلة برمجة مرئية (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة برمجة مرئية/اسئلة برمجة مرئية (3).pdf')">
+            3 اسئلة سنوات
+        </button>
+    </div>
+    <h2>
+        تلخيص
+    </h2>
+    <div>
+        <button onclick="downloadFile('ملخص برمجة مرئية/تلخيص برمجة مرئية (1).pdf')">
+            تلخيص 1
+        </button>
+        <button onclick="downloadFile('ملخص برمجة مرئية/تلخيص برمجة مرئية (2).pdf')">
+            تلخيص 2
+        </button>
+        <button onclick="downloadFile('ملخص برمجة مرئية/تلخيص برمجة مرئية (1).pptx')">
+            تلخيص 3
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجبات برمجة مرئية/واجب برمجة مرئية (1).zip')">
+            1 واجب
+        </button>
+        <button onclick="downloadFile('واجبات برمجة مرئية/واجب برمجة مرئية (2).zip')">
+            2 واجب
+        </button>
+        <button onclick="downloadFile('واجبات برمجة مرئية/واجب برمجة مرئية (3).zip')">
+            3 واجب
+        </button>
+        <button onclick="downloadFile('واجبات برمجة مرئية/واجب برمجة مرئية (4).zip')">
+            4 واجب
+        </button>
+        <button onclick="downloadFile('واجبات برمجة مرئية/واجب برمجة مرئية (5).zip')">
+            5 واجب
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/برمجة مرئية.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

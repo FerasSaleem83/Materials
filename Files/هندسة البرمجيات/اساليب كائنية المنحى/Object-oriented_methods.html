@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة اساليب كائنية المنحى
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة اساليب كائنية المنحى/مادة اساليب كائنية المنحى.pdf')">
+            اساليب كائنية المنحى
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة اساليب كائنية المنحى/اسئلة اساليب كائنية المنحى (1).docx')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساليب كائنية المنحى/اسئلة اساليب كائنية المنحى (1).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساليب كائنية المنحى/اسئلة اساليب كائنية المنحى (1).zip')">
+            3 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساليب كائنية المنحى/اسئلة اساليب كائنية المنحى (2).zip')">
+            4 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساليب كائنية المنحى/اسئلة اساليب كائنية المنحى (4).pdf')">
+            5 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساليب كائنية المنحى/اسئلة اساليب كائنية المنحى (5).pdf')">
+            6 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساليب كائنية المنحى/اسئلة اساليب كائنية المنحى (6).pdf')">
+            7 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساليب كائنية المنحى/اسئلة اساليب كائنية المنحى (7).pdf')">
+            8 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساليب كائنية المنحى/اسئلة اساليب كائنية المنحى (8).pdf')">
+            9 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساليب كائنية المنحى/اسئلة اساليب كائنية المنحى (9).pdf')">
+            10 اسئلة سنوات
+        </button>
+    </div>
+    <h2>
+        اللابات
+    </h2>
+    <div>
+        <button onclick="downloadFile('لابات اساليب كائنية المنحى/لابات اساليب كائنية المنحى.pdf')">
+            حل اللابات
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/اساليب كائنية المنحى.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

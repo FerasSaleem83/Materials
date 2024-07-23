@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة ادارة مشاريع البرمجيات
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة ادارة مشاريع البرمجيات/مادة ادارة مشاريع البرمجيات.pdf')">
+            ادارة مشاريع البرمجيات
+        </button>
+        <button onclick="downloadFile('مادة ادارة مشاريع البرمجيات/كتاب ادارة مشاريع البرمجيات.pdf')">
+            كتاب ادارة مشاريع البرمجيات
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة ادارة مشاريع البرمجيات/اسئلة ادارة مشاريع البرمجيات.pdf')">
+            اسئلة سنوات
+        </button>
+    </div>
+    <h2>
+        تلخيص
+    </h2>
+    <div>
+        <button onclick="downloadFile('ملخصات ادارة مشاريع البرمجيات/تلخيص ادارة مشاريع البرمجيات (1).pdf')">
+            تلخيص شابتر 1
+        </button>
+        <button onclick="downloadFile('ملخصات ادارة مشاريع البرمجيات/تلخيص ادارة مشاريع البرمجيات (2).pdf')">
+            تلخيص شابتر 2
+        </button>
+        <button onclick="downloadFile('ملخصات ادارة مشاريع البرمجيات/تلخيص ادارة مشاريع البرمجيات (3).pdf')">
+            تلخيص شابتر 3
+        </button>
+        <button onclick="downloadFile('ملخصات ادارة مشاريع البرمجيات/تلخيص ادارة مشاريع البرمجيات (4).pdf')">
+            تلخيص شابتر 4
+        </button>
+        <button onclick="downloadFile('ملخصات ادارة مشاريع البرمجيات/تلخيص ادارة مشاريع البرمجيات (5).pdf')">
+            تلخيص شابتر 5
+        </button>
+        <button onclick="downloadFile('ملخصات ادارة مشاريع البرمجيات/تلخيص ادارة مشاريع البرمجيات (6).pdf')">
+            تلخيص شابتر 6
+        </button>
+        <button onclick="downloadFile('ملخصات ادارة مشاريع البرمجيات/تلخيص ادارة مشاريع البرمجيات (7).pdf')">
+            تلخيص شابتر 7
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجبات ادارة مشاريع البرمجيات/واحب ادارة مشاريع البرمجيات (1).pptx')">
+            1 واجب
+        </button>
+        <button onclick="downloadFile('واجبات ادارة مشاريع البرمجيات/واحب ادارة مشاريع البرمجيات (2).pptx')">
+            2 واجب
+        </button>
+        <button onclick="downloadFile('واجبات ادارة مشاريع البرمجيات/واحب ادارة مشاريع البرمجيات (1).docx')">
+            3 واجب
+        </button>
+        <button onclick="downloadFile('واجبات ادارة مشاريع البرمجيات/واحب ادارة مشاريع البرمجيات (2).docx')">
+            4 واجب
+        </button>
+        <button onclick="downloadFile('واجبات ادارة مشاريع البرمجيات/واحب ادارة مشاريع البرمجيات (3).docx')">
+            5 واجب
+        </button>
+    </div>
+    <h2>
+        مشروع
+    </h2>
+    <div>
+        <button onclick="downloadFile('مشاريع ادارة مشاريع البرمجيات/مشروع ادارة مشاريع البرمجيات (1).rar')">
+            مشروع 1
+        </button>
+        <button onclick="downloadFile('مشاريع ادارة مشاريع البرمجيات/مشروع ادارة مشاريع البرمجيات (2).rar')">
+            مشروع 2
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/ادارة مشاريع البرمجيات.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

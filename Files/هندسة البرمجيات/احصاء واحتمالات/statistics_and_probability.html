@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة إحصاء واحتمالات
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة الاحصاء والاحتمالات/مادة الاحصاء والاحتمالات.pdf')">
+            المادة كاملة
+        </button>
+    </div>
+    <h2>
+        الجداول
+    </h2>
+    <div>
+        <button onclick="downloadFile('جداول الاحصاء والاحتمالات/Binomial-Tables-1.pdf')">
+            Binomial
+        </button>
+        <button onclick="downloadFile('جداول الاحصاء والاحتمالات/comulative_Binomial_Probabilities_table(1).pdf')">
+            Comulative Binomial Probabilities
+        </button>
+        <button onclick="downloadFile('جداول الاحصاء والاحتمالات/normal-table.pdf')">
+            Normal
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة الاحصاء والاحتمالات/اسئلة الاحصاء والاحتمالات.pdf')">
+            اسئلة سنوات
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب الاحصاء والاحتمالات/واجب الاحصاء والاحتمالات.pdf')">
+            واجب
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/الاحصاء والاحتمالات.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

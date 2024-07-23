@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة اساسيات هندسة البرمجيات
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة اساسيات هندسة البرمجيات/مادة اساسيات هندسة البرمجيات مترجم.pdf')">
+            اساسيات هندسة البرمجيات
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة اساسيات هندسة البرمجيات/اسئلة اساسيات هندسة البرمجيات (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساسيات هندسة البرمجيات/اسئلة اساسيات هندسة البرمجيات (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساسيات هندسة البرمجيات/اسئلة اساسيات هندسة البرمجيات (3).pdf')">
+            3 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساسيات هندسة البرمجيات/اسئلة اساسيات هندسة البرمجيات (4).pdf')">
+            4 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة اساسيات هندسة البرمجيات/اسئلة أساسيات هندسة البرمجيات كفاءة.pdf')">
+            اسئلة سنوات كفاءة
+        </button>
+    </div>
+    <h2>
+        تلخيص
+    </h2>
+    <div>
+        <button onclick="downloadFile('تلخيص اساسيات هندسة البرمجيات/تلخيص اساسيات هندسة البرمجيات.pdf')">
+            تلخيص
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب اساسيات هندسة البرمجيات/واجب اساسيات هندسة البرمجيات (1).docx')">
+            1 واجب
+        </button>
+        <button onclick="downloadFile('واجب اساسيات هندسة البرمجيات/واجب اساسيات هندسة البرمجيات (1).pdf')">
+            2 واجب
+        </button>
+        <button onclick="downloadFile('واجب اساسيات هندسة البرمجيات/واجب اساسيات هندسة البرمجيات (1).pptx')">
+            3 واجب
+        </button>
+        <button onclick="downloadFile('واجب اساسيات هندسة البرمجيات/واجب اساسيات هندسة البرمجيات (2).docx')">
+            4 واجب
+        </button>
+        <button onclick="downloadFile('واجب اساسيات هندسة البرمجيات/واجب اساسيات هندسة البرمجيات (3).docx')">
+            5 واجب
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/اساسيات هندسة البرمجيات.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>
