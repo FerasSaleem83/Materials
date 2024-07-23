@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة تصميم وتنظيم الحاسوب
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة تصميم وتنظيم الحاسوب/مادة تصميم وتنظيم الحاسوب.pdf')">
+            تصميم وتنظيم الحاسوب
+        </button>
+        <button onclick="downloadFile('مادة تصميم وتنظيم الحاسوب/مادة تصميم وتنظيم الحاسوب مترجم.pdf')">
+            تصميم وتنظيم الحاسوب فاينال مترجم
+        </button>
+    </div>
+    <h2>
+        تلخيصات
+    </h2>
+    <div>
+        <button onclick="downloadFile('تلخيص تصميم وتنظيم الحاسوب/تلخيص تصميم وتنظيم الحاسوب.pdf')">
+            شرح للمادة
+        </button>
+    </div>
+
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة تصميم وتنظيم الحاسوب/اسئلة تصميم وتنظيم الحاسوب (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم وتنظيم الحاسوب/اسئلة تصميم وتنظيم الحاسوب (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب تصميم وتنظيم الحاسوب/واجب تصميم وتنظيم الحاسوب (1).pdf')">
+            واجب 1
+        </button>
+        <button onclick="downloadFile('واجب تصميم وتنظيم الحاسوب/واجب تصميم وتنظيم الحاسوب(2).pdf')">
+            واجب 2
+        </button>
+        <button onclick="downloadFile('واجب تصميم وتنظيم الحاسوب/واجب تصميم وتنظيم الحاسوب(3).pdf')">
+            واجب 3
+        </button>
+        <button onclick="downloadFile('واجب تصميم وتنظيم الحاسوب/واجب تصميم وتنظيم الحاسوب (4)).pdf')">
+            واجب 4
+        </button>
+        <button onclick="downloadFile('واجب تصميم وتنظيم الحاسوب/واجب تصميم وتنظيم الحاسوب (5).pdf')">
+            واجب 5
+        </button>
+        <button onclick="downloadFile('واجب تصميم وتنظيم الحاسوب/واجب تصميم وتنظيم الحاسوب (6).pdf')">
+            واجب 6
+        </button>
+        <button onclick="downloadFile('واجب تصميم وتنظيم الحاسوب/واجب تصميم وتنظيم الحاسوب.docx')">
+            واجب 7
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/تصميم وتنظيم الحاسوب.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

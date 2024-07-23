@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة الشبكات اللاسلكية
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة شبكات لاسلكية/مادة شبكات لاسلكية.pdf')">
+            شبكات لاسلكية
+        </button>
+        <button onclick="downloadFile('مادة شبكات لاسلكية/مادة شبكات لاسلكية مترجمة.pdf')">
+            شبكات لاسلكية مترجم
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب شبكات لاسلكية/واجب شبكات لاسلكية (2).zip')">
+            Sampling
+        </button>
+        <button onclick="downloadFile('واجب شبكات لاسلكية/واجب شبكات لاسلكية (1).pdf')">
+            Multiplexing Demultiplexing
+        </button>
+        <button onclick="downloadFile('واجب شبكات لاسلكية/واجب شبكات لاسلكية (2).pdf')">
+            Modulation Demodulation
+        </button>
+        <button onclick="downloadFile('واجب شبكات لاسلكية/واجب شبكات لاسلكية (3).pdf')">
+            Time Domain Frequency Domain
+        </button>
+        <button onclick="downloadFile('واجب شبكات لاسلكية/واجب شبكات لاسلكية (1).ipynb')">
+            AM Modulation and Demodulation
+        </button>
+        <button onclick="downloadFile('واجب شبكات لاسلكية/واجب شبكات لاسلكية (1).zip')">
+            Project
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة شبكات لاسلكية/اسئلة شبكات لاسلكية (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة شبكات لاسلكية/اسئلة شبكات لاسلكية (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/شبكات لاسلكية.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

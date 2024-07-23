@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة نظم تعليم الكتروني
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة نظم تعليم الكتروني/مادة نظم التعليم الالكتروني.pdf')">
+            نظم تعليم الكتروني
+        </button>
+        <button onclick="downloadFile('مادة نظم تعليم الكتروني/مادة نظم التعليم الالكتروني مترجم.pdf')">
+            نظم تعليم الكتروني مترجم
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة نظم تعليم الكتروني/اسئلة نظم تعليم الكتروني.pdf')">
+            اسئلة سنوات
+        </button>
+
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب نظم تعليم الكتروني/واجب نظم تعليم الكتروني (1).doc')">
+            واجب 1
+        </button>
+        <button onclick="downloadFile('واجب نظم تعليم الكتروني/واجب نظم تعليم الكتروني (2).doc')">
+            واجب 2
+        </button>
+    </div>
+    <h2>
+        مشروع
+    </h2>
+    <div>
+        <button onclick="downloadFile('مشروع نظم تعليم الكتروني/مشروع نظم تعليم الكتروني.zip')">
+            مشروع تلخيص شابتر 6
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/نظم تعليم الكتروني.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

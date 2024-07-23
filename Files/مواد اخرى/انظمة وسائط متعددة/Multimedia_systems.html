@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة أنظمة وسائط متعددة
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة انظمة وسائط متعددة/مادة انظمة الوسائط المتعددة.pdf')">
+            أنظمة وسائط متعددة
+        </button>
+        <button onclick="downloadFile('مادة انظمة وسائط متعددة/مادة انظمة وسائط متعددة مترجمة.pdf')">
+            أنظمة وسائط متعددة مترجم
+        </button>
+        <button onclick="downloadFile('مادة انظمة وسائط متعددة/العملي انظمة وسائط متعددة.pptx')">
+            العملي
+        </button>
+        <button onclick="downloadFile('مادة انظمة وسائط متعددة/html-intoduction انظمة وسائط متعددة.ppt')">
+
+            HTML
+        </button>
+        <button onclick="downloadFile('مادة انظمة وسائط متعددة/HTM tags انظمة وسائط متعددة.docx')">
+
+            Html Tags
+        </button>
+    </div>
+    <h2>
+        تلخيصات
+    </h2>
+    <div>
+        <button onclick="downloadFile('تلخيص انظمة وسائط متعددة/تلخيص انظمة وسائط متعددة (2).pdf')">
+            Audio
+        </button>
+        <button onclick="downloadFile('تلخيص انظمة وسائط متعددة/تلخيص انظمة وسائط متعددة (3).pdf')">
+            Code
+        </button>
+        <button onclick="downloadFile('تلخيص انظمة وسائط متعددة/تلخيص انظمة وسائط متعددة (4).pdf')">
+            Image
+        </button>
+        <button onclick="downloadFile('تلخيص انظمة وسائط متعددة/تلخيص انظمة وسائط متعددة (5).pdf')">
+            Project
+        </button>
+        <button onclick="downloadFile('تلخيص انظمة وسائط متعددة/تلخيص انظمة وسائط متعددة (1).pdf')">
+            Animation
+        </button>
+        <button onclick="downloadFile('تلخيص انظمة وسائط متعددة/تلخيص انظمة وسائط متعددة (6).pdf')">
+            HTML ملاحظات
+        </button>
+    </div>
+
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة انظمة وسائط متعددة/اسئلة انظمة وسائط متعددة (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة انظمة وسائط متعددة/اسئلة انظمة وسائط متعددة (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة انظمة وسائط متعددة/اسئلة انظمة وسائط متعددة (3).pdf')">
+            اسئلة سنوات كويزات
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب انظمة وسائط متعددة/واجب انظمة وسائط متعددة (1).rar')">
+            واجب 1
+        </button>
+        <button onclick="downloadFile('واجب انظمة وسائط متعددة/واجب انظمة وسائط متعددة (2).rar')">
+            واجب 2
+        </button>
+        <button onclick="downloadFile('واجب انظمة وسائط متعددة/واجب انظمة وسائط متعددة (3).rar')">
+            واجب 3
+        </button>
+        <button onclick="downloadFile('واجب انظمة وسائط متعددة/واجب انظمة وسائط متعددة (4).rar')">
+            واجب 4
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/انظمة وسائط متعددة.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

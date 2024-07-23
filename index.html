@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مواد هندسة البرمجيات
+    </h1>
+    <div>
+        <button onclick="openPage('Files/هندسة البرمجيات/احصاء واحتمالات/statistics_and_probability.html')">
+            إحصاء وإحتمالات
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/ادارة مشاريع البرمجيات/Software_Project_Management.html')">
+
+            إدارة مشاريع البرمجيات
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/ادارة نظم قواعد البيانات/Database_Management_Systems.html')">
+
+            إدارة نظم فواعد البيانات
+        </button>
+    </div>
+    <div>
+
+        <button onclick="openPage('Files/هندسة البرمجيات/ادوات هندسة البرمجيات/Software_engineering_tools.html')">
+
+            أدوات هندسة البرمجيات
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/اساسيات البرمجة/Software_Fundamentals.html')">
+
+            أساسيات البرمجة
+        </button>
+        <button
+            onclick="openPage('Files/هندسة البرمجيات/اساسيات هندسة البرمجيات/Software_Engineering_Fundamentals.html')">
+
+            أساسيات هندسة البرمجيات
+        </button>
+    </div>
+    <div>
+        <button onclick="openPage('Files/هندسة البرمجيات/اساليب كائنية المنحى/Object-oriented_methods.html')">
+
+            أساليب كائنية المنحى
+        </button>
+
+        <button onclick="openPage('Files/هندسة البرمجيات/برمجة مرئية/Visual_programming.html')">
+
+            برمجة مرئية
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/تحليل عددي/Practical_Training.html')">
+
+            تحليل عددي
+        </button>
+    </div>
+    <div>
+        <button
+            onclick="openPage('Files/هندسة البرمجيات/تحليل وتصميم نظم معلومات/Information_Systems_Analysis_and_Design.html')">
+
+            تحليل وتصميم نظم المعلومات
+        </button>
+
+        <button onclick="openPage('Files/هندسة البرمجيات/التدريب العملي/Practical_Training.html')">
+
+            تدريب عملي
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/تصميم بنية البرمجيات/Software_architecture_design.html')">
+
+            تصميم بنية البرمجيات
+        </button>
+
+    </div>
+    <div>
+        <button onclick="openPage('Files/هندسة البرمجيات/تصميم منطق/Logic_design.html')">
+
+            تصميم منطق
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/تصميم مواقع الانترنت 1/Website_design1.html')">
+
+            تصميم مواقع إنترنت 1
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/تصميم مواقع الانترنت 2/Website_design2.html')">
+
+            تصميم مواقع إنترنت 2
+        </button>
+
+    </div>
+    <div>
+        <button onclick="openPage('Files/هندسة البرمجيات/تفاضل وتكامل 1/Calculus_1.html')">
+
+            تفاضل وتكامل 1
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/توثيق البرمجيات/Software_documentation.html')">
+
+            توثيق البرمجيات
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/جودة البرمجيات/Software_Quality.html')">
+
+            جودة البرمجيات
+        </button>
+        
+    </div>
+    <div>
+        <button onclick="openPage('Files/هندسة البرمجيات/خوارزميات/Algorithms.html')">
+
+            خوارزميات
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/رياضيات متقطعة/Discrete_mathematics.html')">
+
+            رياضيات متقطعة
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/شبكات الحاسوب/computer_networks.html')">
+
+            شبكات الحاسوب
+        </button>
+        
+    </div>
+    <div>
+        <button onclick="openPage('Files/هندسة البرمجيات/فحص البرمجيات/Software_testing.html')">
+
+            فحص البرمجيات
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/فيزياء عامة 1/General_Physics.html')">
+
+            فيزياء عامة 1
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/قواعد البيانات/Databases.html')">
+
+            قواعد البيانات
+        </button>
+       
+    </div>
+    <div>
+        <button onclick="openPage('Files/هندسة البرمجيات/معمارية الحاسوب/Computer_architecture.html')">
+
+            معمارية الحاسوب
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/منهجية البرمجة/Programming_methodology.html')">
+
+            منهجية البرمجة
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/نظم تشغيل/operating_system.html')">
+
+            نظم تشغيل
+        </button>
+    </div>
+    <div>
+        <button onclick="openPage('Files/هندسة البرمجيات/هندسة الويب/Web_Engineering.html')">
+
+            هندسة الويب
+        </button>
+
+        <button
+            onclick="openPage('Files/هندسة البرمجيات/هندسة برمجيات كائنية المنحى/Object-oriented_software_engineering.html')">
+
+            هندسة برمجيات كائنية المنحى
+        </button>
+        <button
+            onclick="openPage('Files/هندسة البرمجيات/هندسة متطلبات البرمجيات/Software_Requirements_Engineering.html')">
+
+            هندسة متطلبات البرمجيات
+        </button>
+        <button onclick="openPage('Files/هندسة البرمجيات/هياكل البيانات/data_structures.html')">
+            هياكل البيانات
+        </button>
+    </div>
+    <div>
+        <button onclick="openPage('Files/هندسة البرمجيات/هياكل البيانات/data_structures.html')">
+            هياكل البيانات
+        </button>
+    </div>
+    <h1>
+        مواد أخرى
+    </h1>
+    <div>
+        <button onclick="openPage('Files/مواد اخرى/ادارة مخاطر/risk_management.html')">
+            إدارة المخاطر
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/الأدلة الجنائية الرقمية/digital_forensics.html')">
+            الأدلة الجنائية الرقمية
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/شبكات لاسلكية/wireless_networks.html')">
+            الشبكات اللاسلكية
+        </button>
+    </div>
+    <div>
+        <button onclick="openPage('Files/مواد اخرى/القرصنة الأخلاقية/Ethical_Hacking.html')">
+            القرصنة الأخلاقية
+        </button>
+
+        <button onclick="openPage('Files/مواد اخرى/امن هواتف ذكية/Smartphone_Security.html')">
+            أمن الهواتف الذكية
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/امن انترنت الاشياء/Internet_of_Things_Security.html')">
+            أمن إنترنت الأشياء
+        </button>
+    </div>
+    <div>
+
+        <button onclick="openPage('Files/مواد اخرى/امن شبكات/Network_Security.html')">
+            أمن شبكات
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/انظمة وسائط متعددة/Multimedia_systems.html')">
+            أنظمة الوسائط المتعددة
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/أنظمة كشف التسلل/Intrusion_Detection_Systems.html')">
+            أنظمة كشف التسلل
+        </button>
+    </div>
+    <div>
+
+        <button onclick="openPage('Files/مواد اخرى/برمجة الشبكات والمخدمات/Network_and_Servers_Programming.html')">
+            برمجة الشبكات والمخدمات
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/برمجة بايثون/python_programming.html')">
+            برمجة بلغة البايثون
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/برمجة متقدمة/Advanced_programming.html')">
+            برمجة متقدمة
+        </button>
+    </div>
+    <div>
+
+        <button onclick="openPage('Files/مواد اخرى/برمجة هواتف ذكية/smart_phone_programming.html')">
+            برمجة هواتف ذكية
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/بروتوكول امن المعلومات/Information_Security_Protocols.html')">
+            بروتوكولات أمن المعلومات
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/تصميم وتنظيم الحاسوب/Computer_design_and_organization.html')">
+            تصميم وتنظيم الحاسوب
+        </button>
+    </div>
+    <div>
+
+        <button onclick="openPage('Files/مواد اخرى/تفاعل الانسان والحاسوب/Human_Computer_Interaction.html')">
+            تفاعل الإنسان مع الحاسوب
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/خصوصية الحوسبة/Computing_Privacy.html')">
+            خصوصية الحوسبة
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/ذكاء اصطناعي/artificial_intelligence.html')">
+            ذكاء إصطناعي
+        </button>
+    </div>
+    <div>
+
+        <button onclick="openPage('Files/مواد اخرى/كيمياء عامة 1/chemistry.html')">
+            كيمياء عامة 1
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/مراقبة الشبكات وتوثيقها/Network_monitoring_and_documentation.html')">
+            مراقبة الشبكة والتوثيق
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/مواضيع مختارة 1/selected_topics_1.html')">
+            مواضيع مختارة 1
+        </button>
+    </div>
+    <div>
+
+        <button onclick="openPage('Files/مواد اخرى/نظم تعليم الكتروني/E-learning_systems.html')">
+            نظم تعليم إلكتروني
+        </button>
+        <button onclick="openPage('Files/مواد اخرى/نظم موزعة/Distributed_System.html')">
+            نظم موزعة
+        </button>
+    </div>
+    <h1>
+        مواد حرة
+    </h1>
+    <div>
+        <button onclick="openPage('Files/مواد حرة/الاتصالات والانترنت/Communications_and_Internet.html')">
+            إتصالات وإنترنت
+        </button>
+        <button onclick="openPage('Files/مواد حرة/اسعافات اولية/Band_aid.html')">
+            إسعافات أولية
+        </button>
+        <button onclick="openPage('Files/مواد حرة/العلوم العسكرية/Military_Science.html')">
+            العلوم العسكرية
+        </button>
+    </div>
+    <div>
+
+        <button onclick="openPage('Files/مواد حرة/انجليزي 101/English101.html')">
+            إنجليزي 101
+        </button>
+        <button onclick="openPage('Files/مواد حرة/توعية مرورية/Traffic_awareness.html')">
+            توعية مرورية
+        </button>
+        <button onclick="openPage('Files/مواد حرة/الثقافة الاسلامية/Islamic_culture.html')">
+            ثقافة إسلامية
+        </button>
+    </div>
+    <div>
+
+        <button onclick="openPage('Files/مواد حرة/الريادة والابداع/Leadership_and_creativity.html')">
+            ريادة وإبداع
+        </button>
+        <button onclick="openPage('Files/مواد حرة/رياضة وصحة/Sports_and_health.html')">
+            رياضة وصحة
+        </button>
+        <button onclick="openPage('Files/مواد حرة/رياضة وصحة للجميع/Sports_and_health_for_all.html')">
+            رياضة وصحة للجميع
+        </button>
+    </div>
+    <div>
+
+        <button onclick="openPage('Files/مواد حرة/عربي 101/Arabic101.html')">
+            عربي 101
+        </button>
+        <button onclick="openPage('Files/مواد حرة/علم النفس والمجتمع/Psychology_and_Society.html')">
+            علم نفس ومجتمع
+        </button>
+        <button onclick="openPage('Files/مواد حرة/مناهج البحث العلمي/Research_Methodology.html')">
+            مناهج البحث العلمي
+        </button>
+    </div>
+    <div>
+        <button
+        onclick="openPage('Files/مواد حرة/القدس والوصاية الهاشمية/Jerusalem_and_the_Hashemite_Guardianship.html')">
+        قدس ووصاية
+    </button>
+        <button onclick="openPage('Files/مواد حرة/مهارات اتصال/communication_skills.html')">
+            مهارات الإتصال
+        </button>
+        <button onclick="openPage('Files/مواد حرة/مهارات الحاسوب/computer_skills.html')">
+            مهارات الحاسوب
+        </button>
+    </div>
+    <div>
+        <button onclick="openPage('Files/مواد حرة/المهارات الحياتية/Life_skills.html')">
+            مهارات حياتية
+        </button>
+        <button onclick="openPage('Files/مواد حرة/تربية وطينة/Wataneah.html')">
+            وطنبة
+        </button>
+    </div>
+    <h1>
+        امتحانات المستوى
+    </h1>
+    <div>
+        <button onclick="downloadFile('Files/امتحان المستوى/امتحان المستوى انجليزي/English.html')">
+            إنجليزي
+        </button>
+        <button onclick="downloadFile('Files/امتحان المستوى/امتحان المستوى الحاسوب/Computer.html')">
+            حاسوب
+        </button>
+        <button onclick="downloadFile('Files/امتحان المستوى/امتحان المستوى عربي/Arabic.html')">
+            عربي
+        </button>
+    </div>
+    <h1>
+        مواد جامعات أخرى
+    </h1>
+    <div>
+        <button onclick="openPage('Files/مواد جامعة اخرى/نمذجة البرمجيات/software_modeling.html')">
+            نمذجة البرمجيات (التكنو)
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+<script>
+    function openPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+</html>

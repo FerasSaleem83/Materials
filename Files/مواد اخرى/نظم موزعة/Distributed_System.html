@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة نظم موزعة
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة نظم موزعة/مادة نظم موزعة.pdf')">
+            نظم موزعة
+        </button>
+    </div>
+    <h2>
+        تلخيصات
+    </h2>
+    <div>
+        <button onclick="downloadFile('تلخيص نظم موزعة/تلخيص نظم موزعة (1).pdf')">
+            تلخيص 1
+        </button>
+        <button onclick="downloadFile('تلخيص نظم موزعة/تلخيص نظم موزعة (2).pdf')">
+            تلخيص 2
+        </button>
+    </div>
+
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة نظم موزعة/اسئلة نظم موزعة.pdf')">
+            اسئلة الميد 2024
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب نظم موزعة/واجب نظم موزعة (1).pdf')">
+            واجب 1
+        </button>
+        <button onclick="downloadFile('واجب نظم موزعة/واجب نظم موزعة (2).pdf')">
+            واجب 2
+        </button>
+        <button onclick="downloadFile('واجب نظم موزعة/واجب نظم موزعة (3).pdf')">
+            واجب 3
+        </button>
+        <button onclick="downloadFile('واجب نظم موزعة/واجب نظم موزعة (4).pdf')">
+            واجب 4
+        </button>
+        <button onclick="downloadFile('واجب نظم موزعة/واجب نظم موزعة (5).pdf')">
+            واجب 5
+        </button>
+    </div>
+    <h2>
+        مشروع
+    </h2>
+    <div>
+        <button onclick="downloadFile('مشروع نظم موزعة/مشروع نظم موزعة (1).pdf')">
+            مشروع الجزيرة
+        </button>
+        <button onclick="downloadFile('مشروع نظم موزعة/مشروع نظم موزعة (2).pdf')">
+            2 مشروع الجزيرة
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/نظم موزعة.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

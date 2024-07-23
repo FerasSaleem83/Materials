@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة إدارة المخاطر
+    </h1>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة ادارة مخاطر/اسئلة ادارة مخاطر (1).pdf')">
+            اسئلة سنوات فاينال
+        </button>
+        <button onclick="downloadFile('اسئلة ادارة مخاطر/اسئلة ادارة مخاطر (2).pdf')">
+            اسئلة سنوات ميد
+        </button>
+        <button onclick="downloadFile('اسئلة ادارة مخاطر/اسئلة ادارة مخاطر (3).pdf')">
+            اسئلة سنوات كويز
+        </button>
+
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/ادارة مخاطر.zip')">
+            المحتوى
+        </button>
+    </div>
+
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

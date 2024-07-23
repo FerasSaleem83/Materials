@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة الذكاء الاصطناعي
+    </h1>
+    <h2>
+        تلخيصات
+    </h2>
+    <div>
+        <button onclick="downloadFile('تلخيص ذكاء اصطناعي/تلخيص ذكاء اصطناعي (1).pdf')">
+            تلخيص 1
+        </button>
+        <button onclick="downloadFile('تلخيص ذكاء اصطناعي/تلخيص ذكاء اصطناعي (2).pdf')">
+            تلخيص 2
+        </button>
+        <button onclick="downloadFile('تلخيص ذكاء اصطناعي/تلخيص ذكاء اصطناعي (3).pdf')">
+            تلخيص 3
+        </button>
+        <button onclick="downloadFile('تلخيص ذكاء اصطناعي/تلخيص ذكاء اصطناعي (4).pdf')">
+            تلخيص 4
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب ذكاء اصطناعي/واجب ذكاء اصطناعي (1).pdf')">
+            واجب 1
+        </button>
+        <button onclick="downloadFile('واجب ذكاء اصطناعي/واجب ذكاء اصطناعي (2).pdf')">
+            واجب 2
+        </button>
+        <button onclick="downloadFile('واجب ذكاء اصطناعي/واجب ذكاء اصطناعي (3).pdf')">
+            واجب 3
+        </button>
+        <button onclick="downloadFile('واجب ذكاء اصطناعي/واجب ذكاء اصطناعي (4).rar')">
+            واجب 4
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/ذكاء اصطناعي.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>
