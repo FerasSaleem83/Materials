@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة تصميم مواقع انترنت 2
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة تصميم مواقع انترنت 2/مادة تصميم مواقع انترنت 2.pdf')">
+            تصميم مواقع انترنت 2
+        </button>
+        <button onclick="downloadFile('مادة تصميم مواقع انترنت 2/مادة العملي تصميم مواقع انترنت 2.docx')">
+            عملي
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة تصميم مواقع انترنت 2/اسئلة تصميم مواقع انترنت 2 (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم مواقع انترنت 2/اسئلة تصميم مواقع انترنت 2 (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم مواقع انترنت 2/اسئلة تصميم مواقع انترنت 2 (3).pdf')">
+            3 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم مواقع انترنت 2/اسئلة تصميم مواقع انترنت 2 (4).pdf')">
+            4 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم مواقع انترنت 2/اسئلة تصميم مواقع انترنت 2 (5).pdf')">
+            5 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم مواقع انترنت 2/اسئلة تصميم مواقع انترنت 2 كفاءه.pdf')">
+            اسئلة سنوات كفاءة
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجبات تصميم مواقع انترنت 2/الواجب الاول تصميم مواقع الانترنت 2.docx')">
+            1 واجب
+        </button>
+        <button onclick="downloadFile('واجبات تصميم مواقع انترنت 2/واجب تصميم مواقع الانترنت 2.jpg')">
+            2 واجب
+        </button>
+    </div>
+    <h2>
+        مشروع
+    </h2>
+    <div>
+        <button onclick="downloadFile('مشروع تصميم مواقع انترنت 2/مشروع تصميم مواقع الانترنت 2.zip')">
+            مشروع تسجيل الدخول
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/تصميم مواقع انترنت 2.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

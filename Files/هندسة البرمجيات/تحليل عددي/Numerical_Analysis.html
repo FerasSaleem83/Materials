@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة تحليل عددي
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة تحليل عددي/مادة تحليل عددي.pdf')">
+            تحليل عددي
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة تحليل عددي/اسئلة تحليل عددي (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تحليل عددي/اسئلة تحليل عددي (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تحليل عددي/اسئلة تحليل عددي (3).pdf')">
+            3 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تحليل عددي/اسئلة تحليل عددي (4).pdf')">
+            4 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تحليل عددي/اسئلة تحليل عددي (5).pdf')">
+            5 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تحليل عددي/اسئلة تحليل عددي (6).pdf')">
+            6 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تحليل عددي/اسئلة تحليل عددي (7).pdf')">
+            7 اسئلة سنوات
+        </button>
+    </div>
+    <h2>
+        شرح
+    </h2>
+    <div>
+        <button onclick="downloadFile('شرح تحليل عددي/شرح تحليل عددي (1).pdf')">
+            شرح 1
+        </button>
+        <button onclick="downloadFile('شرح تحليل عددي/شرح تحليل عددي (1).pptx')">
+            شرح 2
+        </button>
+        <button onclick="downloadFile('شرح تحليل عددي/شرح تحليل عددي (2).pdf')">
+            شرح 3
+        </button>
+        <button onclick="downloadFile('شرح تحليل عددي/شرح تحليل عددي (2).pptx')">
+            شرح 4
+        </button>
+        <button onclick="downloadFile('شرح تحليل عددي/شرح تحليل عددي (3).pdf')">
+            شرح 5
+        </button>
+        <button onclick="downloadFile('شرح تحليل عددي/شرح تحليل عددي (3).pptx')">
+            شرح 6
+        </button>
+        <button onclick="downloadFile('شرح تحليل عددي/شرح تحليل عددي (4).pdf')">
+            شرح 7
+        </button>
+        <button onclick="downloadFile('شرح تحليل عددي/شرح تحليل عددي (4).pptx')">
+            شرح 8
+        </button>
+        <button onclick="downloadFile('شرح تحليل عددي/شرح تحليل عددي (5).pdf')">
+            شرح 9
+        </button>
+        <button onclick="downloadFile('شرح تحليل عددي/شرح تحليل عددي (5).pptx')">
+            شرح 10
+        </button>
+        <button onclick="downloadFile('شرح تحليل عددي/شرح تحليل عددي (6).pdf')">
+            شرح 11
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب تحليل عددي/واجب تحليل عددي (1).docx')">
+            1 واجب
+        </button>
+        <button onclick="downloadFile('واجب تحليل عددي/واجب تحليل عددي (1).ipynb')">
+            2 واجب
+        </button>
+        <button onclick="downloadFile('واجب تحليل عددي/واجب تحليل عددي (1).jpeg')">
+            3 واجب
+        </button>
+        <button onclick="downloadFile('واجب تحليل عددي/واجب تحليل عددي (1).pdf')">
+            4 واجب
+        </button>
+        <button onclick="downloadFile('واجب تحليل عددي/واجب تحليل عددي (2).ipynb')">
+            5 واجب
+        </button>
+        <button onclick="downloadFile('واجب تحليل عددي/واجب تحليل عددي (3).ipynb')">
+            6 واجب
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/تحليل عددي.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

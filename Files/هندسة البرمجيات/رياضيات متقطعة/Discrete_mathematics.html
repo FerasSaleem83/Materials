@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة رياضيات متقطعة
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <h3>
+            للدكتور عبد الله النعيمي
+        </h3>
+        <button onclick="downloadFile('مادة رياضيات متقطعة عبد الله النعيمي/مادة رياضيات متقطعة.pdf')">
+            مادة رياضيات متقطعة
+        </button>
+        <h3>
+            للدكتور فيصل الزيود
+        </h3>
+        <button onclick="downloadFile('مادة رياضيات متقطعة فيصل الزيود/رياضيات متقطعة شابتر 1.pptx')">
+            شابتر 1
+        </button>
+        <button onclick="downloadFile('مادة رياضيات متقطعة فيصل الزيود/رياضيات متقطعة شابتر 2 كتاب.pdf')">
+            شابتر 2 كتاب
+        </button>
+        <button onclick="downloadFile('مادة رياضيات متقطعة فيصل الزيود/رياضيات متقطعة شابتر 3.pptx')">
+            شابتر 2
+        </button>
+        <button onclick="downloadFile('مادة رياضيات متقطعة فيصل الزيود/رياضيات متقطعة شابتر 4.pptx')">
+            شابتر 4
+        </button>
+        <button onclick="downloadFile('مادة رياضيات متقطعة فيصل الزيود/رياضيات متقطعة شابتر 6.pdf')">
+            شابتر 6
+        </button>
+        <button onclick="downloadFile('مادة رياضيات متقطعة فيصل الزيود/رياضيات متقطعة مراجعة.ppt')">
+            مراجعة
+        </button>
+
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة رياضيات متقطعة/اسئلة رياضيات متقطعة.pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة رياضيات متقطعة/اسئلة رياضيات متقطعة (1).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة رياضيات متقطعة/اسئلة رياضيات متقطعة (2).pdf')">
+            3 اسئلة سنوات
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/رياضيات متقطعة.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

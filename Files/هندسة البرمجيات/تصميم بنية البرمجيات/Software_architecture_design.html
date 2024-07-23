@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة تصميم بنية البرمجيات
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة تصميم بنية البرمجيات/مادة تصميم بنية البرمجيات.pptx')">
+            تصميم بنية البرمجيات
+        </button>
+        <button onclick="downloadFile('مادة تصميم بنية البرمجيات/مادة تصميم بنية البرمجيات مترجم.pptx')">
+            تصميم بنية البرمجيات مترجم
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة تصميم بنية البرمجيات/اسئلة تصميم بنية البرمجيات (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم بنية البرمجيات/اسئلة تصميم بنية البرمجيات (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم بنية البرمجيات/اسئلة تصميم بنية البرمجيات (3).pdf')">
+            3 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم بنية البرمجيات/اسئلة تصميم بنية البرمجيات (4).pdf')">
+            4 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم بنية البرمجيات/اسئلة تصميم بنية البرمجيات (5).pdf')">
+            5 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم بنية البرمجيات/اسئلة تصميم بنية البرمجيات (1).jpg')">
+            6 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم بنية البرمجيات/اسئلة تصميم بنية البرمجيات كفاءة .pdf')">
+            اسئلة سنوات كفاءة
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب تصميم بنية البرمجيات/واجب تصميم بنية البرمجيات (1).docx')">
+            1 واجب
+        </button>
+        <button onclick="downloadFile('واجب تصميم بنية البرمجيات/واجب تصميم بنية البرمجيات (1).pdf')">
+            2 واجب
+        </button>
+        <button onclick="downloadFile('واجب تصميم بنية البرمجيات/واجب تصميم بنية البرمجيات (2).docx')">
+            3 واجب
+        </button>
+        <button onclick="downloadFile('واجب تصميم بنية البرمجيات/واجب تصميم بنية البرمجيات (2).pdf')">
+            4 واجب
+        </button>
+        <button onclick="downloadFile('واجب تصميم بنية البرمجيات/واجب تصميم بنية البرمجيات (3).docx')">
+            5 واجب
+        </button>
+        <button onclick="downloadFile('واجب تصميم بنية البرمجيات/واجب تصميم بنية البرمجيات (3).pdf')">
+            6 واجب
+        </button>
+        <button onclick="downloadFile('واجب تصميم بنية البرمجيات/واجب تصميم بنية البرمجيات (4).docx')">
+            7 واجب
+        </button>
+        <button onclick="downloadFile('واجب تصميم بنية البرمجيات/واجب تصميم بنية البرمجيات (4).pdf')">
+            8 واجب
+        </button>
+    </div>
+    <h2>
+        تصوير اللوح
+    </h2>
+    <div>
+        <button onclick="downloadFile('')">
+            1 تصوير
+        </button>
+        <button onclick="downloadFile('')">
+            2 تصوير
+        </button>
+    </div>
+    <h2>
+        اللابات
+    </h2>
+    <div>
+        <button onclick="downloadFile('')">
+            لاب 1
+        </button>
+        <button onclick="downloadFile('')">
+            لاب 2
+        </button>
+        <button onclick="downloadFile('')">
+            لاب 3
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/تصميم بنية البرمجيات.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

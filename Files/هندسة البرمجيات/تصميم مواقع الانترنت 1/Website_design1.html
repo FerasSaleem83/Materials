@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة تصميم مواقع الانترنت 1
+    </h1>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة تصميم مواقع الانترنت 1/اسئلة تصميم مواقع انترنت 1 (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة تصميم مواقع الانترنت 1/اسئلة تصميم مواقع انترنت 1 (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+    </div>
+    <h2>
+        تلخيص
+    </h2>
+    <div>
+        <button onclick="downloadFile('تلخيص تصميم مواقع الانترنت 1/تلخيص كود تصميم مواقع الانترنت 1.pdf')">
+            تلخيص الكود
+        </button>
+    </div>
+    <h2>
+        مشروع
+    </h2>
+    <div>
+        <button onclick="downloadFile('مشاريع تصميم مواقع الانترنت 1/مشروع تصميم مواقع انترنت 1 (1).zip')">
+            1 مشروع
+        </button>
+        <button onclick="downloadFile('مشاريع تصميم مواقع الانترنت 1/مشروع تصميم مواقع انترنت 1 (2).zip')">
+            2 مشروع
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/تصميم مواقع الانترنت 1.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

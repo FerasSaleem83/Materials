@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة توثيق البرمجيات
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة توثيق البرمجيات/مادة توثيق البرمجيات مترجم.pptx')">
+            توثيق البرمجيات مترجم
+        </button>
+        <button onclick="downloadFile('مادة توثيق البرمجيات/Chapter1-Understanding-Task-Orientation.pptx')">
+            شابتر 1
+        </button>
+        <button onclick="downloadFile('مادة توثيق البرمجيات/Chapter2 Writing to Teach-Tutorials.ppt')">
+            شابتر 2
+        </button>
+        <button onclick="downloadFile('مادة توثيق البرمجيات/chapter3  writing to guide-Procedures.ppt')">
+            شابتر 3
+        </button>
+        <button onclick="downloadFile('مادة توثيق البرمجيات/Chapter4  Writing to Support- References .ppt')">
+            شابتر 4
+        </button>
+        <button onclick="downloadFile('مادة توثيق البرمجيات/Chapter8 Conducting Usability Tests.ppt')">
+            شابتر 8
+        </button>
+        <button onclick="downloadFile('مادة توثيق البرمجيات/Chapter9 Editing and Fine Tuning.ppt')">
+            شابتر 9
+        </button>
+        <button onclick="downloadFile('مادة توثيق البرمجيات/Chapter10 Designing for Task Orientation.ppt')">
+            شابتر 10
+        </button>
+        <button onclick="downloadFile('مادة توثيق البرمجيات/Chapter11 Laying Out Pages and Screens.ppt')">
+            شابتر 11
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('أسئلة توثيق البرمجيات/اسئلة توثيق البرمجيات.pdf')">
+            اسئلة
+        </button>
+        <button onclick="downloadFile('أسئلة توثيق البرمجيات/اسئلة توثيق  البرمجيات كفاءة.pdf')">
+            اسئلة سنوات كفاءة
+        </button>
+    </div>
+    <h2>
+        تلخيص
+    </h2>
+    <div>
+        <button onclick="downloadFile('تلخيص توثيق البرمجيات/توثيق فاينال.docx')">
+            1 تلخيص
+        </button>
+        <button onclick="downloadFile('تلخيص توثيق البرمجيات/توثيق.pdf')">
+            2 تلخيص
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجبات توثيق البرمجيات/واجب توثيق البرمجيات (1).docx')">
+            1 واجب
+        </button>
+        <button onclick="downloadFile('واجبات توثيق البرمجيات/واجب توثيق البرمجيات (2).docx')">
+            2 واجب
+        </button>
+        <button onclick="downloadFile('واجبات توثيق البرمجيات/واجب توثيق البرمجيات (3).docx')">
+            3 واجب
+        </button>
+        <button onclick="downloadFile('واجبات توثيق البرمجيات/واجب توثيق البرمجيات (4).docx')">
+            4 واجب
+        </button>
+        <button onclick="downloadFile('واجبات توثيق البرمجيات/واجب توثيق البرمجيات (5).docx')">
+            5 واجب
+        </button>
+        <button onclick="downloadFile('واجبات توثيق البرمجيات/واجب توثيق البرمجيات (6).docx')">
+            6 واجب
+        </button>
+    </div>
+    <h2>
+        مشروع
+    </h2>
+    <div>
+        <button onclick="downloadFile('مشروع توثيق البرمجيات/مشروع توثيق البرمجيات.docx')">
+            1 مشروع
+        </button>
+        <button onclick="downloadFile('مشروع توثيق البرمجيات/مشروع توثيق البرمجيات.pdf')">
+            2 مشروع
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/توثيق البرمجيات.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>
