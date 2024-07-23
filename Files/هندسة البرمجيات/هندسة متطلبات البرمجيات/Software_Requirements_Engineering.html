@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة هندسة متطلبات البرمجيات
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة هندسة متطلبات البرمجيات/مادة هندسة متطلبات البرمجيات.pptx')">
+            هندسة متطلبات البرمجيات
+        </button>
+        <button onclick="downloadFile('مادة هندسة متطلبات البرمجيات/مادة هندسة متطلبات البرمجيات مترجم.pptx')">
+            هندسة متطلبات البرمجيات مترجم
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة هندسة متطلبات البرمجيات/اسئلة هندسة متطلبات البرمجيات (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة هندسة متطلبات البرمجيات/اسئلة هندسة متطلبات البرمجيات (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة هندسة متطلبات البرمجيات/اسئلة هندسة متطلبات البرمجيات (1).pptx')">
+            3 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة هندسة متطلبات البرمجيات/اسئلة هندسة متطلبات البرمجيات سائد.pdf')">
+            اسئلة سنوات سائد
+        </button>
+        <button onclick="downloadFile('اسئلة هندسة متطلبات البرمجيات/اسئلة هندسة متطلبات البرمجيات كفاءة (1).pdf')">
+            1 اسئلة سنوات كفاءة
+        </button>
+        <button onclick="downloadFile('اسئلة هندسة متطلبات البرمجيات/اسئلة هندسة متطلبات البرمجيات كفاءة (2).pdf')">
+            2 اسئلة سنوات كفاءة
+        </button>
+    </div>
+    <h2>
+        مشروع
+    </h2>
+    <div>
+        <button onclick="downloadFile('مشروع هندسة متطلبات البرمجيات/مشروع هندسة متطلبات البرمجيات (1).docx')">
+            1 مشروع
+        </button>
+        <button onclick="downloadFile('مشروع هندسة متطلبات البرمجيات/مشروع هندسة متطلبات البرمجيات (1).pptx')">
+            2 مشروع
+        </button>
+        <button onclick="downloadFile('مشروع هندسة متطلبات البرمجيات/مشروع هندسة متطلبات البرمجيات (2).pptx')">
+            3 مشروع
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/هندسة متطلبات البرمجيات.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

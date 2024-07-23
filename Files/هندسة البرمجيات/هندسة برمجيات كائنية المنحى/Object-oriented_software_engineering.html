@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة هندسة برمجيات كائنية المنحى
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة هندسة برمجيات كائنية المنحى/مادة هندسة البرمجيات كائنية المنحى.pptx')">
+            هندسة برمجيات كائنية المنحى
+        </button>
+        <button
+            onclick="downloadFile('مادة هندسة برمجيات كائنية المنحى/مادة هندسة البرمجيات كائنية المنحى مترجم.pptx')">
+            هندسة برمجيات كائنية المنحى مترجم
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة هندسة برمجيات كائنية المنحى/اسئلة هندسة برمجيات كائنية المنحى (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة هندسة برمجيات كائنية المنحى/اسئلة هندسة برمجيات كائنية المنحى (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة هندسة برمجيات كائنية المنحى/اسئلة هندسة برمجيات كائنية المنحى (3).pdf')">
+            3 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة هندسة برمجيات كائنية المنحى/اسئلة هندسة برمجيات كائنية المنحى منذر.pdf')">
+            اسئلة سنوات منذر
+        </button>
+        <button
+            onclick="downloadFile('اسئلة هندسة برمجيات كائنية المنحى/اسئلة هندسة البرمجيات كائنية المنحى كفاءة (1).pdf')">
+            1 اسئلة سنوات كفاءة
+        </button>
+        <button
+            onclick="downloadFile('اسئلة هندسة برمجيات كائنية المنحى/اسئلة هندسة البرمجيات كائنية المنحى كفاءة (2).pdf')">
+            2 اسئلة سنوات كفاءة
+        </button>
+        <button
+            onclick="downloadFile('اسئلة هندسة برمجيات كائنية المنحى/اسئلة هندسة البرمجيات كائنية المنحى كفاءة (3).pdf')">
+            3 اسئلة سنوات كفاءة
+        </button>
+    </div>
+    <h2>
+        تلخيص
+    </h2>
+    <div>
+        <button onclick="downloadFile('ملخص هندسة برمجيات كائنية المنحى/تلخيص هندسة برمجيات كائنية المنحى.pdf')">
+            شرح للمادة
+        </button>
+    </div>
+    <h2>
+        مشروع
+    </h2>
+    <div>
+        <button onclick="downloadFile('مشروع هندسة برمجيات كائنية المنحى/مشروع هندسة برمجيات كائنية المنحى (1).docx')">
+            1 مشروع
+        </button>
+        <button onclick="downloadFile('مشروع هندسة برمجيات كائنية المنحى/مشروع هندسة برمجيات كائنية المنحى (1).pptx')">
+            2 مشروع
+        </button>
+        <button onclick="downloadFile('مشروع هندسة برمجيات كائنية المنحى/مشروع هندسة برمجيات كائنية المنحى (2).pptx')">
+            3 مشروع
+        </button>
+        <button onclick="downloadFile('مشروع هندسة برمجيات كائنية المنحى/مشروع هندسة برمجيات كائنية المنحى (3).pptx')">
+            4 مشروع
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/هندسة برمجيات كائنية المنحى.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>
