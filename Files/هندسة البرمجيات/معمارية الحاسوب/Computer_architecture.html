@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة معمارية الحاسوب
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة معمارية الحاسوب/مادة معمارية الحاسوب (1).pptx')">
+            مادة معمارية الحاسوب 1
+        </button>
+        <button onclick="downloadFile('مادة معمارية الحاسوب/مادة معمارية الحاسوب (2).pptx')">
+            مادة معمارية الحاسوب 2
+        </button>
+        <button onclick="downloadFile('مادة معمارية الحاسوب/مادة معمارية الحاسوب مترجم (1).pptx')">
+            مادة معمارية الحاسوب مترجم 1
+        </button>
+        <button onclick="downloadFile('مادة معمارية الحاسوب/مادة معمارية الحاسوب مترجم (2).pptx')">
+            مادة معمارية الحاسوب مترجم 2
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة معمارية الحاسوب/اسئلة معمارية الحاسوب (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة معمارية الحاسوب/اسئلة معمارية الحاسوب (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة معمارية الحاسوب/اسئلة معمارية الحاسوب (3).pdf')">
+            3 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة معمارية الحاسوب/اسئلة معمارية الحاسوب كويزات.pdf')">
+            اسئلة سنوات كويز
+        </button>
+    </div>
+    <h2>
+        تلخيص
+    </h2>
+    <div>
+        <button onclick="downloadFile('ملخص معمارية الحاسوب/شرح معمارية الحاسوب شابتر 2.pdf')">
+            تلخيص شابتر 2
+        </button>
+        <button onclick="downloadFile('ملخص معمارية الحاسوب/شرح معمارية الحاسوب شابتر 3.pdf')">
+            تلخيص شابتر 3
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب معمارية الحاسوب/واجب معمارية الحاسوب (1).docx')">
+            1 واجب
+        </button>
+        <button onclick="downloadFile('واجب معمارية الحاسوب/واجب معمارية الحاسوب (2).docx')">
+            2 واجب
+        </button>
+        <button onclick="downloadFile('واجب معمارية الحاسوب/واجب معمارية الحاسوب (3).docx')">
+            3 واجب
+        </button>
+        <button onclick="downloadFile('واجب معمارية الحاسوب/واجب معمارية الحاسوب (4).docx')">
+            4 واجب
+        </button>
+        <button onclick="downloadFile('واجب معمارية الحاسوب/واجب معمارية الحاسوب (5).docx')">
+            5 واجب
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/معمارية الحاسوب.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

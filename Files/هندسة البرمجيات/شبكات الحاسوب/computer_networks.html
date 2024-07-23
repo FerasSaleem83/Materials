@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة شبكات الحاسوب
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة شبكات الحاسوب/مادة شبكات الحاسوب.pptx')">
+            شبكات الحاسوب
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة شبكات الحاسوب/اسئلة شبكات الحاسوب.pdf')">
+            اسئلة سنوات
+        </button>
+    </div>
+    <h2>
+        تلخيص
+    </h2>
+    <div>
+        <button onclick="downloadFile('')">
+            تلخيص
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب شبكات الحاسوب/مشاريع شبكات الحاسوب (1).docx')">
+            1 واجب
+        </button>
+        <button onclick="downloadFile('واجب شبكات الحاسوب/مشاريع شبكات الحاسوب (2).docx')">
+            2 واجب
+        </button>
+        <button onclick="downloadFile('واجب شبكات الحاسوب/مشاريع شبكات الحاسوب (3).docx')">
+            3 واجب
+        </button>
+        <button onclick="downloadFile('واجب شبكات الحاسوب/مشاريع شبكات الحاسوب (4).docx')">
+            4 واجب
+        </button>
+        <button onclick="downloadFile('واجب شبكات الحاسوب/مشاريع شبكات الحاسوب (1).jpeg')">
+            5 واجب
+        </button>
+        <button onclick="downloadFile('واجب شبكات الحاسوب/مشاريع شبكات الحاسوب (2).jpeg')">
+            6 واجب
+        </button>
+        <button onclick="downloadFile('واجب شبكات الحاسوب/مشاريع شبكات الحاسوب (1).lnk')">
+            7 واجب
+        </button>
+        <button onclick="downloadFile('واجب شبكات الحاسوب/مشاريع شبكات الحاسوب (1).pkt')">
+            8 واجب
+        </button>
+        <button onclick="downloadFile('واجب شبكات الحاسوب/مشاريع شبكات الحاسوب (2).pkt')">
+            9 واجب
+        </button>
+        <button onclick="downloadFile('واجب شبكات الحاسوب/مشاريع شبكات الحاسوب (3).pkt')">
+            10 واجب
+        </button>
+        <button onclick="downloadFile('واجب شبكات الحاسوب/مشاريع شبكات الحاسوب (4).pkt')">
+            11 واجب
+        </button>
+        <button onclick="downloadFile('واجب شبكات الحاسوب/مشاريع شبكات الحاسوب (1).rar')">
+            12 واجب
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/شبكات الحاسوب.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة قواعد البيانات
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة قواعد البيانات/مادة قواعد البيانات.pdf')">
+            قواعد البيانات
+        </button>
+    </div>
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة قواعد البيانات/اسئلة قواعد البيانات (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة قواعد البيانات/اسئلة قواعد البيانات (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة قواعد البيانات/اسئلة قواعد البيانات (3).pdf')">
+            3 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة قواعد البيانات/اسئلة قواعد البيانات كفاءه.pdf')">
+            اسئلة سنوات كفاءة
+        </button>
+    </div>
+    <h2>
+        تلخيص
+    </h2>
+    <div>
+        <button onclick="downloadFile('ملخص قواعد البيانات/ملخص قواعد البيانات (1).pdf')">
+            1 تلخيص
+        </button>
+        <button onclick="downloadFile('ملخص قواعد البيانات/ملخص قواعد البيانات (2).pdf')">
+            2 تلخيص
+        </button>
+        <button onclick="downloadFile('ملخص قواعد البيانات/كودات قواعد البيانات.pdf')">
+            تلخيص الكود
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (2).docx')">
+            1 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (3).docx')">
+            2 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (4).docx')">
+            3 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (5).docx')">
+            4 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (6).docx')">
+            5 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (7).docx')">
+            6 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (8).docx')">
+            7 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (9).docx')">
+            8 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (10).docx')">
+            9 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (11).docx')">
+            10 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (12).docx')">
+            11 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (13).docx')">
+            12 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (14).docx')">
+            13 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (15).docx')">
+            14 واجب
+        </button>
+        <button onclick="downloadFile('واجب قواعد البيانات/واجب قواعد البيانات (16).docx')">
+            15 واجب
+        </button>
+    </div>
+    <h2>
+        اللابات
+    </h2>
+    <div>
+        <button onclick="downloadFile('لابات قواعد البيانات/لابات قواعد البيانات.pdf')">
+            1 لاب
+        </button>
+        <button onclick="downloadFile('لابات قواعد البيانات/لابات قواعد البيانات.docx')">
+            2 لاب
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/قواعد البيانات.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>
