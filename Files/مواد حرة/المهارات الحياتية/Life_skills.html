@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>أسئلة المواد</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        مادة المهارات الحياتية
+    </h1>
+    <h2>
+        المادة
+    </h2>
+    <div>
+        <button onclick="downloadFile('مادة المهارات الحياتية/مادة المهارات الحياتية.pdf')">
+            مهارات حياتية
+        </button>
+    </div>
+    <h2>
+        تلخيصات
+    </h2>
+    <div>
+        <button onclick="downloadFile('تلخيص المهارات الحياتية/تلخيص المهارات الحياتية (1).pdf')">
+            تلخيص 1
+        </button>
+        <button onclick="downloadFile('تلخيص المهارات الحياتية/تلخيص المهارات الحياتية (2).pdf')">
+            تلخيص 2
+        </button>
+        <button onclick="downloadFile('تلخيص المهارات الحياتية/تلخيص المهارات الحياتية (3).pdf')">
+            تلخيص 3
+        </button>
+    </div>
+
+    <h2>
+        الامتحان
+    </h2>
+    <div>
+        <button onclick="downloadFile('اسئلة المهارات الحياتية/اسئلة المهارات الحياتية (1).pdf')">
+            1 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة المهارات الحياتية/اسئلة المهارات الحياتية (2).pdf')">
+            2 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة المهارات الحياتية/اسئلة المهارات الحياتية (3).pdf')">
+            3 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة المهارات الحياتية/اسئلة المهارات الحياتية (4).pdf')">
+            4 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة المهارات الحياتية/اسئلة المهارات الحياتية (5).pdf')">
+            5 اسئلة سنوات
+        </button>
+        <button onclick="downloadFile('اسئلة المهارات الحياتية/اسئلة المهارات الحياتية كويزات.pdf')">
+            أسئلة الكويز 2024
+        </button>
+    </div>
+    <h2>
+        الواجب
+    </h2>
+    <div>
+        <button onclick="downloadFile('واجب المهارات الحياتية/واجب المهارات الحياتية (1).pdf')">
+            واجب نسخة 1
+        </button>
+        <button onclick="downloadFile('واجب المهارات الحياتية/واجب المهارات الحياتية (2).pdf')">
+            واجب نسخة 2
+        </button>
+        <button onclick="downloadFile('واجب المهارات الحياتية/واجب المهارات الحياتية (3).pdf')">
+            واجب نسخة 3
+        </button>
+        <button onclick="downloadFile('واجب المهارات الحياتية/واجب المهارات الحياتية (4).pdf')">
+            واجب نسخة 4
+        </button>
+    </div>
+    <h2>
+        المحتوى كامل بملف مضغوط
+    </h2>
+    <div>
+        <button onclick="downloadFile('المحتوى/المهارات الحياتية.zip')">
+            المحتوى
+        </button>
+    </div>
+</body>
+<script>
+    function downloadFile(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+</script>
+
+</html>
